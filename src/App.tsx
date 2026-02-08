@@ -1,4 +1,8 @@
-import {Header,Hero,Features} from "./components";
+import {Header
+    ,Hero,
+    Features,
+    MoreInformation
+} from "./components";
 
 function App() {
 
@@ -24,6 +28,7 @@ function App() {
                 <Hero/>
                 
                 <Features />
+                <MoreInformation />
             </section>
 
 
