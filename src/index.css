@@ -33,5 +33,6 @@
 }
 
 body {
-  @apply font-Open-Sans bg-Navy-850-  text-White
+  @apply font-Open-Sans bg-gray-500 
+    text-White
 }

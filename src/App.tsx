@@ -1,15 +1,16 @@
-import {Header} from "./components/header";
+import {Header,Hero} from "./components";
 
 function App() {
 
     return (
-        <main className='border border-white w-[375px] m-auto'>
-            <section  className='bg-gray-500 p-6  h-[420px]  relative'> 
+        <main className=' w-[375px] m-auto'>
+            <section  className=' bg-neutral-900 p-6  h-[420px]  relative'> 
             <Header />
+            
             <img 
             src="/public/images/illustration-intro.png"
             alt="intro illustraction" 
-            className='relative z-10 mt-12'
+            className='relative z-10  mt-12'
             />
 
             <img 
@@ -17,7 +18,10 @@ function App() {
             src="/public/images/bg-curvy-mobile.svg" 
             alt="bg curvy mobile"
             />
+            </section>
 
+            <section className='bg-neutral-900 p-6'>
+                <Hero/>
             </section>
 
 
