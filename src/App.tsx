@@ -1,7 +1,8 @@
 import {Header
     ,Hero,
     Features,
-    MoreInformation
+    MoreInformation,
+    Testimonials
 } from "./components";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                 
                 <Features />
                 <MoreInformation />
+                <Testimonials />
             </section>
 
 
