@@ -1,7 +1,7 @@
 interface Features {
-  title: string;
-  description: string;
-  iconUrl: string;
+    title: string;
+    description: string;
+    iconUrl: string;
 }
 
 const featuresData: Features[] = [

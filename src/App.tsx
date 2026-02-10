@@ -2,7 +2,8 @@ import {Header
     ,Hero,
     Features,
     MoreInformation,
-    Testimonials
+    Testimonials,
+    Form
 } from "./components";
 
 function App() {
@@ -31,6 +32,10 @@ function App() {
                 <Features />
                 <MoreInformation />
                 <Testimonials />
+            </section>
+
+            <section className="bg-neutral-950 ">
+           <Form />
             </section>
 
 
