@@ -3,7 +3,9 @@ import {Header
     Features,
     MoreInformation,
     Testimonials,
-    Form
+    Form,
+    Footer
+
 } from "./components";
 
 function App() {
@@ -26,7 +28,7 @@ function App() {
             />
             </section>
 
-            <section className='bg-neutral-900 p-6'>
+            <section className='bg-neutral-900 p-6  border-White pb-[300px]'>
                 <Hero/>
                 
                 <Features />
@@ -34,8 +36,9 @@ function App() {
                 <Testimonials />
             </section>
 
-            <section className="bg-neutral-950 ">
-           <Form />
+            <section className="bg-neutral-950 relative ">
+            <Form />
+            <Footer/>
             </section>
 
 
