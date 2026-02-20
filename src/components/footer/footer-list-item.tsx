@@ -5,7 +5,7 @@ interface Props{
 export const FooterListItem = ({ text }: Props) => {
     return (
         <li>
-        <a className='hover:text-amber-500' href="#">{text}</a>
+        <a className=' hover:text-teal-500' href="#">{text}</a>
         </li>
     )
 }

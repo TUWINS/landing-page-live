@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 import { ContactItem } from "./footer/contact-item"
 import { FooterListItem } from "./footer/footer-list-item"
-import { FacebookIcon } from "./footer/facebook-Icon";
+import { FacebookIcon } from "./footer/facebook-icon";
 import { XIcon } from "./footer/x-icon";
 import { InstagramIcon } from "./footer/instagram-icon";
 
@@ -101,19 +101,17 @@ export const Footer = () => {
           }
         </ul>
 
-<div className='flex justify-center gap-4 '>
+
   
-  
-          {medias.map((media: Media) => (
-            <div
-              key={media.text}
-              className='text-white hover:text-teal-200
-              cursor-pointer border rounded-full  size-[30px] p-0.5'>
-  
-              {media.icon}
-  
-            </div>
-          ))}
+  <div className='flex justify-center gap-4'>
+            {medias.map((media) => (
+              <div
+                key={media.text}
+                className='text-white hover:text-Teal-200 cursor-pointer border rounded-full size-[40px] p-2'
+              >
+                {media.icon}
+              </div>
+            ))}
 </div>
       </div>
     </footer>

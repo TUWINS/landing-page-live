@@ -12,7 +12,7 @@ function App() {
 
     return (
         <main className=' w-[375px] m-auto'>
-            <section  className=' bg-neutral-900 p-6  h-[420px]  relative'> 
+            <section  className=' bg-Navy-900 p-6  h-[420px]  relative'> 
             <Header />
             
             <img 
@@ -28,7 +28,7 @@ function App() {
             />
             </section>
 
-            <section className='bg-neutral-900 p-6  border-White pb-[300px]'>
+            <section className='bg-Navy-900 p-6  border-White pb-[300px]'>
                 <Hero/>
                 
                 <Features />
@@ -36,7 +36,7 @@ function App() {
                 <Testimonials />
             </section>
 
-            <section className="bg-neutral-950 relative ">
+            <section className="bg-Navy-950 relative ">
             <Form />
             <Footer/>
             </section>
