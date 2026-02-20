@@ -1,9 +1,9 @@
 import type { JSX } from "react";
 
 
-    export interface ContactInformation {
+export interface ContactInformation {
     text: string,
-    inconUrl: string;
+    iconUrl: string;
     alt: string;
     }
     export interface Media {

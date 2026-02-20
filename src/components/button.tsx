@@ -8,7 +8,7 @@ interface Props{
 
 export const Button = ({text, styles = ''}: Props) => {
     return (
-    <button className={`bg-linear-to-b from-teal-200 to-Cyan-500
+    <button className={`bg-gradient-to-b from-teal-200 to-Cyan-500
     h-12 ${styles} rounded-3xl hover:to-teal-200 cursor-pointer `}>{text} </button>
   )
 }

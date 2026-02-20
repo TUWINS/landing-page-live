@@ -32,7 +32,7 @@ export const pages: string[] = [
     ];
 
 export const conditions: string[] = [
-    'Contact',
+    'Contact us',
     'Terms',
     'Privacy'
     ];

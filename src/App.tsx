@@ -12,19 +12,25 @@ function App() {
 
     return (
         <main className='  m-auto'>
-            <section  className=' bg-gray-400 p-6  h-[420px]  relative md:h-[640px]'> 
+            <section  className=' bg-Navy-850 p-6  h-[420px]  relative md:h-[640px]'> 
             <Header />
             
             <img 
-            src="/public/images/illustration-intro.png"
+            src="/images/illustration-intro.png"
             alt="intro illustraction" 
             className='relative z-10  mt-12 w-[320px]  md:w-[450px] mx-auto'
             />
 
             <img 
-            className='absolute bottom-0  left-0 w-full'
-            src="/public/images/bg-curvy-mobile.svg" 
+            className='absolute bottom-0  left-0 w-full xl:hidden'
+            src="/images/bg-curvy-mobile.svg" 
             alt="bg curvy mobile"
+            />
+
+            <img 
+            className='absolute bottom-0  left-0 w-full hidden xl:block'
+            src="/images/bg-curvy-desktop.svg" 
+            alt="bg curvy desktop"
             />
             </section>
 
@@ -36,7 +42,7 @@ function App() {
                 <Testimonials />
             </section>
 
-            <section className="bg-Navy-950 pg-6 relative ">
+            <section className="bg-Navy-950 p-6 relative ">
             <Form />
             <Footer/>
             </section>

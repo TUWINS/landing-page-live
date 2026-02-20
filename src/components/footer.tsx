@@ -1,46 +1,43 @@
-
 import { conditions, contactInformation, medias, pages } from "../common/constants";
 import type { ContactInformation } from "../types.ts/type";
 import { ContactItem } from "./footer/contact-item"
 import { FooterListItem } from "./footer/footer-list-item"
 
-
-
 export const Footer = () => {
   return (
     <footer className='pt-[260px] pb-[160px] px-6'>
       <img className='mb-10' src="/images/logo.svg" alt="Logo" />
-    <div className='flex flex-col gap-4 md:flex-row items-center'>
-      <ContactItem iconUrl={""} styles="flex-1" {...contactInformation[0]} />
 
-      <div className='flex flex-col gap-4 flex-1'>
-        {contactInformation.slice(1, 4).map((contact: ContactInformation) => (
-          <ContactItem iconUrl={""} key={contact.alt} {...contact} />
-        ))}
-      </div>
-    </div>
+      <div className='xl:flex xl:gap-24'>
+        <div className='flex flex-col gap-4 md:flex-row md:items-start  xl:gap-24'>
 
-<div className='flex flex-col gap-8 mt-16 md:flex-row md:gap-24'>
-        <ul>
-          {
-            pages.map((page: string) => (
-              <FooterListItem key={page} text={page} />
+          <ContactItem styles="flex-1" {...contactInformation[0]}/>
 
-            ))
-          }
+          <div className='flex flex-col gap-4 flex-1 xl:flex-none'>
+            {contactInformation.slice(1,4).map
+              ((contact : ContactInformation) => (
+                <ContactItem key={contact.alt} {...contact} />
+              ))
+            }
+          </div>
+        </div>
 
-        </ul>
-        <ul>
-          {
-            conditions.map((condition: string) => (
-              <FooterListItem key={condition} text={condition} />
-            ))
-          }
-        </ul>
-
-
-  
-  <div className='flex justify-center gap-4'>
+        <div className='flex flex-col gap-8 mt-16 md:flex-row md:gap-24 xl:mt-0'>
+          <ul>
+            {
+              pages.map((page: string) => (
+                <FooterListItem key={page} text={page} />
+              ))
+            }
+          </ul>
+          <ul>
+            {
+              conditions.map((condition: string) => (
+                <FooterListItem key={condition} text={condition} />
+              ))
+            }
+          </ul>
+          <div className='flex justify-center gap-4'>
             {medias.map((media) => (
               <div
                 key={media.text}
@@ -49,10 +46,9 @@ export const Footer = () => {
                 {media.icon}
               </div>
             ))}
-</div>
+          </div>
+        </div>
       </div>
     </footer>
-  )
-}
-
-
+  );
+};
