@@ -1,18 +1,16 @@
 interface Props{
     text:string,
-    inconUrl:string;
+    iconUrl:string;
     alt:string;
+    styles?:string;
 }
 
-export const ContactItem = ({text,inconUrl,alt}: Props) => {
+    export const ContactItem = ({ text, iconUrl, alt, styles = '' }: Props) => {
     return (
-    <div>
-    <div className='flex items-start gap-6'>
-        <img className='mt-1'src={inconUrl} alt={alt} />
-        <p >{text}</p>
-    </div>
-    </div>
-    )
-}
-
+        <div className={`flex items-center gap-4 ${styles}`}>
+        <img className='w-6 h-6' src={iconUrl} alt={alt} />
+        <p className='text-sm'>{text}</p>
+        </div>
+    );
+    }
 

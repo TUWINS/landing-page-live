@@ -11,24 +11,24 @@ import {Header
 function App() {
 
     return (
-        <main className=' w-[375px] m-auto'>
-            <section  className=' bg-Navy-900 p-6  h-[420px]  relative'> 
+        <main className='  m-auto'>
+            <section  className=' bg-gray-400 p-6  h-[420px]  relative md:h-[640px]'> 
             <Header />
             
             <img 
             src="/public/images/illustration-intro.png"
             alt="intro illustraction" 
-            className='relative z-10  mt-12'
+            className='relative z-10  mt-12 w-[320px]  md:w-[450px] mx-auto'
             />
 
             <img 
-            className='absolute bottom-0 left-0 '
+            className='absolute bottom-0  left-0 w-full'
             src="/public/images/bg-curvy-mobile.svg" 
             alt="bg curvy mobile"
             />
             </section>
 
-            <section className='bg-Navy-900 p-6  border-White pb-[300px]'>
+            <section className='bg-Navy-900 p-6  pb-[300px]'>
                 <Hero/>
                 
                 <Features />
@@ -36,7 +36,7 @@ function App() {
                 <Testimonials />
             </section>
 
-            <section className="bg-Navy-950 relative ">
+            <section className="bg-Navy-950 pg-6 relative ">
             <Form />
             <Footer/>
             </section>

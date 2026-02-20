@@ -1,11 +1,11 @@
 
 export const MoreInformation = () => {
   return (
-    <div  className='my-40'>
+    <div  className='my-40 md:flex md:items-center md:gap-4 '>
 
-    <img className='mb-12' src="/images/illustration-stay-productive.png"
+    <img className='mb-12 md:w-[380px]' src="/images/illustration-stay-productive.png"
     alt="illustration stay productive" />
-
+<div>
     <h2 className='font-bold mb-4'>Stay productive, wherever you are</h2>
 
     <p className='text-sm mb-4'>Never let location be an issue when accessing your files.
@@ -20,7 +20,7 @@ export const MoreInformation = () => {
         
         <img src="/images/icon-arrow.svg" alt="arrow icon" />
     </a>
-
+</div>
     </div>
     )
 }

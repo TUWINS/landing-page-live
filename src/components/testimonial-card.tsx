@@ -9,7 +9,7 @@ interface  Props{
 
 export const TestimonialCard = ({name, role, image, quote}: Props) => {
     return (
-        <div className='bg-neutral-800 rounded-sm p-6  w-[280px]' >
+        <div className='bg-Navy-850 rounded-sm p-6  ' >
                 <blockquote className='text-[.75rem] mb-4'>
                     {quote}
                 </blockquote>
